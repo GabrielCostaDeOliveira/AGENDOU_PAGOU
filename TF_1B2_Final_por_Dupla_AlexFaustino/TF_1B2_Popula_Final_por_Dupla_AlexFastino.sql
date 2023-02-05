@@ -9,9 +9,12 @@
 --
 -- Ultimas Alteracoes
 --   29/01/2023 => Adicao de dados da tabela avaliacao       
---   03/02/2023 => Adição de dados na tabela mensalidade, cartão e possui           
+--   03/02/2023 => Adição de dados na tabela mensalidade, cartão e possui        
+--   
 -- PROJETO => 01 Base de Dados
 --         => 11 Tabelas
+--         => 02 perfis
+-- 	       => 02 usuarios
 -- ---------------------------------------------------------
 
 USE TF_1B2_AlexFaustino;

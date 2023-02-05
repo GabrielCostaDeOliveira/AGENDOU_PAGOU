@@ -15,8 +15,11 @@
 --   03/02/2023 => Criação da tabela MENSALIDADE
 --              => Alteração nos atributos dataInicio e dataFim de serviço para dataHorainicio e dataHoraFim, DATE -> DATETIME
 --              => Alteração no atributo dataDoPagamento tipo DATE para dataHoraDoPagamento tipo DATETIME
+-- 
 -- PROJETO => 01 Base de Dados
---         => 10 Tabelas
+--         => 11 Tabelas
+--         => 02 perfis
+-- 	       => 02 usuarios
 -- ---------------------------------------------------------
 CREATE DATABASE IF NOT EXISTS TF_1B2_AlexFaustino;
 

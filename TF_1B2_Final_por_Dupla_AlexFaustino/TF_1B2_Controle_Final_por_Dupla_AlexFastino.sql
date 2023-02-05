@@ -9,6 +9,8 @@
 --       
 -- PROJETO => 01 Base de Dados
 --         => 11 Tabelas
+--         => 02 perfis
+-- 	       => 02 usuarios
 -- ---------------------------------------------------------
 
 USE TF_1B2_AlexFaustino;
