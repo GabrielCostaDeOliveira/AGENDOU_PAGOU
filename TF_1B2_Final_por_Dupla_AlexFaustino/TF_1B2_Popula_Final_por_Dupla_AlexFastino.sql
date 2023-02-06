@@ -21,12 +21,17 @@ USE TF_1B2_AlexFaustino;
 
 
 INSERT INTO ENDERECO (rua, numero, bairro, cep, cidade, estado, complemento) VALUES 
-	('rua verde', 12, 'bairro verde', 78117300, 'verde lima', 'RO', 'do lado da vovô'),
-    ('rua rosa', 23, 'bairro rosa', 72312104, 'rosa choque', 'RO', null),
-    ('rua vermelha', 34, 'bairro vermelha', 69075520, 'vermelho sangue', 'RO', 'do lado da vovo'),
-    ('rua preta', 62, 'bairro preta', 78088072, 'verde lima', 'RO', 'do lado da vovo'),
-    ('rua azul', 43, 'bairro azul', 11346190, 'verde lima', 'RO', 'do lado da vovo'),
-    ('rua ciano', 52, 'bairro ciano', 69903352, 'verde lima', 'RO', 'do lado da vovo');
+	('Avenida Guarapari', 12, 'Condados', 78117300, 'Guarapari', 'ES', 'portão preto'),
+    ('Quadra 31', 23, 'Gurupi', 64091080, 'Gurupi', 'PI', null),
+    ('4ª Travessa Santo Antonio', 34, 'Jacintinho', 57040508, 'Maceió', 'AL', 'esquina'),
+    ('Rua Alberto Nepomuceno', 62, 'São Paulo', 88506565, 'Lages', 'SC', 'sobrado'),
+    ('Praça Professor Álvaro Costa', 43, 'Henrique Jorge', 60525400, 'Fortaleza', 'CE', 'muro branco'),
+    ('Travessa Santos', 52, 'COHAB', 51340211, 'Recife', 'PE', 'do lado da vovo'),
+    ('Rua São Paulo', 45, 'Centro', 12345678, 'São Paulo', 'SP', 'Próximo ao parque'),
+	('Avenida Rio de Janeiro', 123, 'Ipanema', 87654321, 'Rio de Janeiro', 'RJ', 'Apartamento 12'),
+	('Rua Belo Horizonte', 67, 'Savassi', 78901234, 'Belo Horizonte', 'MG', 'Edifício Solar'),
+	('Avenida Recife', 89, 'Boa Viagem', 98765432, 'Recife', 'PE', 'Condomínio Mar do Norte'),
+	('Rua Salvador', 101, 'Barra', 76543210, 'Salvador', 'BA', 'Bloco A, apto. 32');
  
 INSERT INTO CLIENTE (cpf, idEndereco, nome, sexo, dddTelefone, numTelefone, dataDeNascimento, diaDePreferenciaDePagamento, dataDeCriacaoDaConta) VALUES
     (16292654117, 1, 'Maria Souza', 'F', null, null, '1980-01-01', 12,'2023-01-23'),
@@ -34,11 +39,11 @@ INSERT INTO CLIENTE (cpf, idEndereco, nome, sexo, dddTelefone, numTelefone, data
     (20828533229, 3, 'Manuel Pedro Henrique Kauê Pires','M',19, 929378664, '1984-09-05', 30, '2023-01-23'),
     (31230435506, 4, 'Tatiane Giovanna da Luz','F',51, 982736432, '2000-08-03', 30,'2023-01-23'),
     (77991342166, 5, 'Mariah Larissa Moreira','F',22, 982236432, '2002-05-01', 30, '2023-01-23'),
-    (12345678901, 4, 'João Silva','M', 22, 932545678, '1995-08-11', 30,'2023-01-23'),
-    (64393293754, 2, 'Leonardo Mário Nogueira','M', 61, 928829177, '1990-01-01', 30, '2023-01-23'),
-    (72795136970, 3, 'Mário Ricardo Caldeira','M', 21, 984521088, '1993-10-07', 30, '2023-01-23'),
-    (45382226580, 4, 'Lara Fátima Barbosa','F', 62, 936667311, '2000-03-03', 30,'2023-01-23'),
-    (23015975200, 5, 'Roberto Daniel Lucas da Luz','M', 12, 986072510, '2001-03-09', 30, '2023-01-23');
+    (12345678901, 6, 'João Silva','M', 22, 932545678, '1995-08-11', 30,'2023-01-23'),
+    (64393293754, 7, 'Leonardo Mário Nogueira','M', 61, 928829177, '1990-01-01', 30, '2023-01-23'),
+    (72795136970, 8, 'Mário Ricardo Caldeira','M', 21, 984521088, '1993-10-07', 30, '2023-01-23'),
+    (45382226580, 9, 'Lara Fátima Barbosa','F', 62, 936667311, '2000-03-03', 30,'2023-01-23'),
+    (23015975200, 10, 'Roberto Daniel Lucas da Luz','M', 12, 986072510, '2001-03-09', 30, '2023-01-23');
     
     
 INSERT INTO AREADEATUACAO (descricao, nome) VALUES 

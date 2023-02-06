@@ -136,7 +136,7 @@ CREATE TABLE AVALIACAO (
 
 CREATE TABLE atua (
     idAreaDeAtuacao INT NOT NULL,
-    cpf BIGINT(11),
+    cpf BIGINT(11) NOT NULL,
     
 	CONSTRAINT atua_AREADEATUCAO_FK FOREIGN KEY (idAreaDeAtuacao)
 		REFERENCES AREADEATUACAO (idAreaDeAtuacao)
@@ -166,7 +166,7 @@ CREATE TABLE MENSALIDADE (
     mes int NOT NULL,
     ano int NOT NULL,
     cpf BIGINT(11) NOT NULL,
-    numeroCartao BIGINT(16),
+    numeroCartao BIGINT(16) NOT NULL,
     valor DECIMAL(7,2) NOT NULL DEFAULT 49.99,
     
     CONSTRAINT MENSALIDADE_PK PRIMARY KEY (mes, ano, cpf),
