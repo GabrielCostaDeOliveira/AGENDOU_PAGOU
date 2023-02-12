@@ -3,9 +3,14 @@
 --                    SCRIPT DE POPULAR (DML)
 --
 -- Data Criacao ...........: 24/01/2023
--- Autor(es) ..............: Gabriel Costa de Oliveira, Alex Gabriel Alves Faustino
+-- Autor(es) ..............: Alex Gabriel Alves Faustino, 
+--							 Carlos Daniel de Godoy Barros Nascimento,  						
+--							 Cristian Souza Assis Furtado,
+--							 Gabriel Costa de Oliveira,
+--							 Gabriel Moretti de Souza
+--
 -- Banco de Dados .........: MySQL 8.0
--- Base de Dados (nome) ...: TF_1B2_AlexFaustino
+-- Base de Dados (nome) ...: TF_1B_AlexFaustino
 --
 -- Ultimas Alteracoes
 --   29/01/2023 => Adicao de dados da tabela avaliacao       
@@ -14,10 +19,10 @@
 -- PROJETO => 01 Base de Dados
 --         => 11 Tabelas
 --         => 02 perfis
--- 	       => 02 usuarios
+-- 	       => 06 usuarios
 -- ---------------------------------------------------------
 
-USE TF_1B2_AlexFaustino;
+USE TF_1B_AlexFaustino;
 
 
 INSERT INTO ENDERECO (rua, numero, bairro, cep, cidade, estado, complemento) VALUES 

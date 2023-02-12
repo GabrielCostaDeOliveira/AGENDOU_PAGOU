@@ -3,9 +3,14 @@
 --                    SCRIPT DE CRIACAO (DDL)
 --
 -- Data Criacao ...........: 24/01/2023
--- Autor(es) ..............: Gabriel Costa de Oliveira, Alex Gabriel Alves Faustino
+-- Autor(es) ..............: Alex Gabriel Alves Faustino, 
+--							 Carlos Daniel de Godoy Barros Nascimento,  						
+--							 Cristian Souza Assis Furtado,
+--							 Gabriel Costa de Oliveira,
+--							 Gabriel Moretti de Souza
+--
 -- Banco de Dados .........: MySQL 8.0
--- Base de Dados (nome) ...: TF_1B2_AlexFaustino
+-- Base de Dados (nome) ...: TF_1B_AlexFaustino
 --
 -- Ultimas Alteracoes
 --   29/01/2023 => Mudança de chave primaria em endereco cep -> idEndereco
@@ -19,11 +24,11 @@
 -- PROJETO => 01 Base de Dados
 --         => 11 Tabelas
 --         => 02 perfis
--- 	       => 02 usuarios
+-- 	       => 06 usuarios
 -- ---------------------------------------------------------
-CREATE DATABASE IF NOT EXISTS TF_1B2_AlexFaustino;
+CREATE DATABASE IF NOT EXISTS TF_1B_AlexFaustino;
 
-USE TF_1B2_AlexFaustino;
+USE TF_1B_AlexFaustino;
 
 CREATE TABLE ENDERECO (
     idEndereco INT AUTO_INCREMENT,
@@ -160,7 +165,7 @@ CREATE TABLE possui (
 		REFERENCES CARTAO (numeroCartao)
 			ON DELETE RESTRICT ON UPDATE CASCADE,
 	CONSTRAINT atua_UK UNIQUE (cpf, numeroCartao)
-);
+)ENGINE = InnoDB;
 
 CREATE TABLE MENSALIDADE (
     mes int NOT NULL,
@@ -176,4 +181,4 @@ CREATE TABLE MENSALIDADE (
     CONSTRAINT MENSALIDADE_CARTAO_PK FOREIGN KEY (numeroCartao)
 		REFERENCES CARTAO (numeroCartao)
 			ON DELETE RESTRICT ON UPDATE CASCADE
-);
+)ENGINE = InnoDB;

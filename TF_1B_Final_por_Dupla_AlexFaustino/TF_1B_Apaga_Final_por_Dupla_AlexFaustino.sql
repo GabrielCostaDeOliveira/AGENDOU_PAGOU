@@ -3,22 +3,28 @@
 --                    SCRIPT DE APAGAR (DDL)
 --
 -- Data Criacao ...........: 24/01/2023
--- Autor(es) ..............: Gabriel Costa de Oliveira, Alex Gabriel Alves Faustino
+-- Autor(es) ..............: Alex Gabriel Alves Faustino, 
+--							 Carlos Daniel de Godoy Barros Nascimento,  						
+--							 Cristian Souza Assis Furtado,
+--							 Gabriel Costa de Oliveira,
+--							 Gabriel Moretti de Souza
+--
 -- Banco de Dados .........: MySQL 8.0
--- Base de Dados (nome) ...: TF_1B2_AlexFaustino
+-- Base de Dados (nome) ...: TF_1B_AlexFaustino
 --
 -- Ultimas Alteracoes
 --   29/01/2023 => Adicao do drop da tabela avaliacao e possui      
 --   03/02/2023 => Adicao do drop de mensalidade    
 --   05/02/2023 => Adicao do drop das ROLE e USER
+--   12/02/2023 => Adicao do drop de mais usuarios
 --
 -- PROJETO => 01 Base de Dados
 --         => 11 Tabelas
 --         => 02 perfis
--- 	       => 02 usuarios
+-- 	       => 06 usuarios
 -- ---------------------------------------------------------
 
-USE TF_1B2_AlexFaustino;
+USE TF_1B_AlexFaustino;
 
 -- Tabelas
 
@@ -41,5 +47,9 @@ DROP ROLE DESENVOLVEDOR;
 
 -- Users
 
-DROP USER ADM;
+DROP USER Cleiton;
+DROP USER Jose;
+DROP USER Manoel;
 DROP USER ANAMARIABRAGA;
+DROP USER NALDO;
+DROP USER JOHNLENNON;
